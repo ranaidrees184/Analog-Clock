@@ -1,0 +1,30 @@
+#container{
+    background-color: aqua;
+    height:300px;
+    width:300px;
+    border:2px solid black;
+    border-radius:50%;
+    position:relative;
+    left:30%;
+    top:30px;
+    /* display:flex;
+    justify-content:center;
+    flex-wrap:wrap; */
+}
+
+.clock span{
+    font-size:30px;
+    position:absolute;
+    transform:rotate(calc(30deg * var(--i)) );
+    inset: 12px;
+    text-align: center;
+    /* transform: rotate(-30deg * var(--i)); */
+};
+
+.clock span b{
+    /* position:absolute;\ */
+    transform:rotate(calc(-30deg * var(--i)));
+    /* inset:12px; */
+    display:inline-block;
+}
+
